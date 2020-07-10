@@ -1,0 +1,6 @@
+name: Impossible
+version: ${project.version}
+main: me._KingCurry_.main
+api-version: 1.16
+authors: [_KingCurry_]
+description: Basically I tried to make Minecraft Impossible to beat.
