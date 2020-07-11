@@ -11,5 +11,6 @@ public class ItemConsumeEvent  implements Listener {
         Player player = event.getPlayer();
         player.setHealth(0.1);
         player.sendMessage(ChatColor.Red +"You Fool Everytime you drink, eat , consume anything your health goes down");
+          player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW_DIGGING , 180 , 10));
     }
 }
