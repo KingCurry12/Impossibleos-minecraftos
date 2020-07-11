@@ -10,6 +10,6 @@ public class ItemConsumeEvent  implements Listener {
     public void ConsumeEvent(PlayerItemConsumeEvent event){
         Player player = event.getPlayer();
         player.setHealth(0.1);
-        player.sendMessage("You Fool Everytime you drink, eat , consume anything your health goes down");
+        player.sendMessage(ChatColor.Red +"You Fool Everytime you drink, eat , consume anything your health goes down");
     }
 }
