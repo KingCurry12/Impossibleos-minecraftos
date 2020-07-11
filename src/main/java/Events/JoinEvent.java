@@ -14,7 +14,7 @@ public class JoinEvent implements Listener {
         player.sendMessage("Also you can walk in the sneaking speed so RIP");
         player.setMaxHealth(0.5);
         player.setWalkSpeed(0.1f);
-        player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW_DIGGING, 180 , 100));
+        player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW_DIGGING, 180 , 10));
         player.sendMessage("Also wait 180s so u can break blocks");
     }
 }
