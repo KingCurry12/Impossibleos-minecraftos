@@ -112,6 +112,11 @@ public class EntitySpawnEvent implements Listener {
 
 
         }
+        if(entity.getType().equals(EntityType.ENDER_CRYSTAL)){
+            EnderCrystal enderCrystal = (EnderCrystal) event.getEntity();
+            enderCrystal.setInvulnerable(true);
+            enderCrystal.setShowingBottom(true);
+        }
 
     }
 }
