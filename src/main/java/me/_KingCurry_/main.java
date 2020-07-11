@@ -12,7 +12,6 @@ public class main  extends JavaPlugin {
 public void onEnable(){
         getServer().getPluginManager().registerEvents(new Events.EntitySpawnEvent(),  this);
         getServer().getPluginManager().registerEvents(new Events.ItemConsumeEvent(), this);
-        getServer().getPluginManager().registerEvents(new Events.EntitySpawnEvent() , this);
         getServer().getPluginManager().registerEvents(new Events.SleepEvent(),  this);
         getServer().getPluginManager().registerEvents(new Events.DeathEvent(), this);
         getServer().getPluginManager().registerEvents(new Events.JoinEvent() , this);
