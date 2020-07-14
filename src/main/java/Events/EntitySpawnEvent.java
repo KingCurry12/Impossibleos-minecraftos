@@ -9,6 +9,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 
 
 public class EntitySpawnEvent implements Listener {
@@ -109,8 +111,12 @@ public class EntitySpawnEvent implements Listener {
             skeleton.getEquipment().setLeggingsDropChance(0);
             skeleton.setMaxHealth(200);
             skeleton.setHealth(200);
-
-
+        }
+        if(entity.getType().equals(EntityType.BLAZE)){
+            Blaze blaze  = (Blaze) event.getEntity();
+            blaze.setMaxHealth(200);
+            blaze.setHealth(200);
+            blaze.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE , 120*600 , 10));
         }
         if(entity.getType().equals(EntityType.ENDER_CRYSTAL)){
             EnderCrystal enderCrystal = (EnderCrystal) event.getEntity();
